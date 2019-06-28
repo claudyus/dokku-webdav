@@ -10,7 +10,7 @@ USERNAME and PASSWORD env vars can be used to set the needed authentication.
 Remember to mount the container dir /app/data outside the container for persistence.
 
 
-Here and example of configuration:
+Here and example of configuration::
 
 	dokku storage:mount $APP /var/lib/dokku/data/storage/$APP:/app/data
 	dokku config:set $APP PASSWORD=testpass
